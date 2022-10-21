@@ -17,8 +17,8 @@ from telethon.tl.types import (DocumentAttributeFilename, DocumentAttributeStick
                                InputMessagesFilterDocument, InputStickerSetID)
 from telethon.utils import get_input_document
 
+from config import *
 from db import addgvar, gvarstat
-from . import *
 
 bot = TelegramClient(
     session="HellBot",
