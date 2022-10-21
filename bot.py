@@ -3,6 +3,7 @@ import io
 import math
 import os
 import random
+import re
 import textwrap
 import urllib.request
 from os import remove
