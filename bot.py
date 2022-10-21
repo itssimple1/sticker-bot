@@ -4,6 +4,7 @@ import math
 import os
 import random
 import re
+import sys
 import textwrap
 import urllib.request
 from os import remove
