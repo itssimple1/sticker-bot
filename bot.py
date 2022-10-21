@@ -68,29 +68,7 @@ async def start_bot():
 
 USERS = SUDO_USERS
 
-import asyncio
-import io
-import math
-import os
-import random
-import textwrap
-import urllib.request
-from os import remove
-
-from PIL import Image, ImageDraw, ImageFont
-from telethon import Button, events
-from telethon.errors import PackShortNameOccupiedError
-from telethon.errors.rpcerrorlist import YouBlockedUserError
-from telethon.tl import functions, types
-from telethon.tl.functions.messages import GetStickerSetRequest
-from telethon.tl.types import (DocumentAttributeFilename, DocumentAttributeSticker,
-                               InputMessagesFilterDocument, InputStickerSetID)
-from telethon.utils import get_input_document
-
-from TelethonHell.DB.gvar_sql import addgvar, gvarstat
-from . import *
-
-class STICKER:
+    class STICKER:
     def __init__(self):
         self.emoji = "🍀"
         self.pack = 1
@@ -556,20 +534,3 @@ async def waifu(event):
         hide_via=True,
     )
     await event.delete()
-
-
-CmdHelp("stickers").add_command(
-    "kang", "<emoji> <number>", "Adds the sticker to desired pack with a custom emoji of your choice. If emoji is not mentioned then default is 😎. And if number is not mentioned then Pack will go on serial wise. \n  ✓(1 pack = 120 static stickers)\n  ✓(1 pack = 50 animated & video stickers)"
-).add_command(
-    "stkrinfo", "<reply to sticker>", "Gets all the infos of the sticker pack"
-).add_command(
-    "delst", "<reply to sticker>", "Deletes The Replied Sticker from your pack."
-).add_command(
-    "editst", "<reply to sticker> <new emoji>", "Edits the emoji of replied sticker of your pack."
-).add_command(
-    "text", "<word>", "Sends the written text in sticker format."
-).add_command(
-    "waifu", "<word>", "Waifu writes the word for you."
-).add_command(
-    "pkang", "<reply to a sticker> <pack name>", "Kangs all the stickers in replied pack to your pack. Also supports custom pack name. Just give name after command.", "pkang My kang pack"
-).add_info(
