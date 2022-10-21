@@ -68,7 +68,7 @@ async def start_bot():
 
 USERS = SUDO_USERS
 
-    class STICKER:
+class STICKER:
     def __init__(self):
         self.emoji = "🍀"
         self.pack = 1
