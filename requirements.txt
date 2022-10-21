@@ -7,3 +7,4 @@ alembic
 telethon
 tgcrypto==1.2.3
 numpy
+psycopg2
