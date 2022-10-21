@@ -5,6 +5,6 @@ toml
 emoji
 alembic
 telethon
-tgcrypto==1.2.3
+tgcrypto
 numpy
 psycopg2
