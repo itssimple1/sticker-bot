@@ -4,6 +4,6 @@ pillow
 toml
 emoji==2.0.0
 alembic
-pyrogram==0.17.1
+telethon
 tgcrypto==1.2.3
 numpy
