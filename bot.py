@@ -26,7 +26,6 @@ from db import addgvar, gvarstat
 
 
 bot = TelegramClient(
-    session="HellBot",
     api_id=API_ID,
     api_hash=API_HASH,
     auto_reconnect=True,
