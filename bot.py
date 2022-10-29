@@ -28,8 +28,6 @@ from db import addgvar, gvarstat
 bot = TelegramClient(
     api_id=API_ID,
     api_hash=API_HASH,
-    auto_reconnect=True,
-    connection_retries=None,
 ).start(bot_token=BOT_TOKEN)
 
 
